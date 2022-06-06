@@ -1,0 +1,60 @@
+body {
+    color: pink;
+    background-color: black;
+}
+
+head {
+    background-color: black;
+    color: white
+}
+.Menu{
+    background-color: pink;
+}
+.Menu li{
+    display: inline;
+    padding: 0% 3%;
+    margin-top: 1%;
+}
+.Menu li a{
+    text-decoration: pink;
+    font-size: 28px;
+    margin-left: 30px; 
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+.footer{
+    color: #666;
+    text-align: right;
+      font-weight: bold;
+      clear: both;
+}
+
+.teste{
+    float: right;
+    text-align: center;
+position: relative;
+margin-right: 350px;
+}
+.f1{
+    float: right;
+    height: 300px;
+    width: 800px;
+    padding: 40px;
+    margin-right: 240px;
+    }
+    .oi{
+       text-align: center;
+       font-size: 25px;
+    }
+    .contents{
+        text-align: center;
+    }
+    .texto{
+        text-align: center; 
+        font-size: 30px;
+        text-align: justify;
+        
+    }
