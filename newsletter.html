@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Shopping</title>
+</head>
+<body>
+    <div class="Menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quem_somos.html">Quem Somos</a></li>
+            <li><a href="aluguel.html">Alugue sua Loja</a></li>
+            <li><a href="lojas.html">Lojas</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="contentstrab">
+        <form name="trabconosco">
+            <fieldset class="grupo">
+                <legend><h2>Newsletter</h2></legend>
+                
+                <h3>Cadastre-se e receba em primeira mão todas as nossas promoções</h3> <br><br>
+                
+                <label>Título::</label>
+                <select class="maior" name="titulo">
+                    <option value="0"></option>
+                    <option value="1">Sr.</option>
+                    <option value="2">Sra.</option>
+                    <option value="3">Srta.</option>
+                </select>
+                <br><br>
+                
+                <label>Informe o seu nome:</label><br>
+                <input class="maior" type="text" name="nome" placeholder="Nome" required maxlenght="50" >
+                <br><br>
+
+                <label>Informe o seu sobrenome:</label><br>
+                <input class="maior" type="text" name="sobrenome" placeholder="Sobrenomeome" required maxlenght="50" >
+                <br><br>
+
+                <label>Informe o seu e-mail:</label> <br>
+                <input class="email" type="text" name="email" placeholder="Digite o seu e-mail" required  maxlength="50">
+                <br><br>
+
+              <form id="frmDate">
+                    <label for="data">Informe sua data de nascimento:</label> <br>
+                    <input class="data" type="date" name="data" id="data">
+              </form>
+                <h2 id="resultado"></h2>
+                <script>
+                    document.getElementById("frmDate").onsubmit = function () { 
+                        let frmData = document.getElementById('frmDate').elements;
+                        document.getElementById("resultado").innerHTML = frmData['data'].value;
+                        return false;
+                    }
+                </script>                   
+                </form>
+                <br>
+                
+                <input type="submit" name="enviar" value="CADASTRAR">
+                <input type="reset" name="limpar" value="LIMPAR">
+                <br><br>
+
+
+            </fieldset>
+        </form>
+    </div>
+    
+
+    <div class="footer">
+        <hr>Construida por Julia Mansur, Thaisa Alves, Thawan e Thiago Souza.</hr>
+    </div>
+</body>
+</html>
