@@ -60,7 +60,11 @@ margin-right: 350px;
     }
 
 .tabela{
-    text-align: center;
+    text-align: justify;
     margin-left: 500px;
 
+}
+.tabela2{
+    text-align:justify;
+    margin-left: 600px;
 }
